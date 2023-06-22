@@ -7,4 +7,23 @@ import { Component } from '@angular/core';
 })
 export class WorkExpoComponent {
 
+  listServiceData = [
+    {
+      serviceIcon: 'fas fa-code',
+      serviceTitle: 'Web Developer',
+      serviceContent: 'Empower Your Online Presence with Expert Web Development'
+    },
+    {
+      serviceIcon: 'fab fa-android',
+      serviceTitle: 'Android Developer',
+      serviceContent: 'Unlocking Innovation with Expert Android Development'
+    },
+    {
+      serviceIcon: 'fas fa-pencil-ruler',
+      serviceTitle: 'UI/UX Developer',
+      serviceContent: 'Driving User Engagement with Stunning UI/UX Solutions'
+    },
+    
+  ];
+
 }

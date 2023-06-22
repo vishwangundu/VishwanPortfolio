@@ -1,1 +1,38 @@
-<p>skills works!</p>
+<app-nav></app-nav>
+<section id="portfolio" class="portfolio">
+  <section class="">
+    <div class="container">
+
+      <app-main-head></app-main-head>
+      <div class="row">
+        <div class="col-lg-12 d-flex justify-content-center">
+          <ul id="portfolio-flters">
+            <li data-filter="*" class="filter-active">{{'ALL ('+All+')'}}</li>
+            <li data-filter=".filter-app">{{'APP('+App+')'}}</li>
+            <li data-filter=".filter-card">{{'WEB ('+web+')'}}</li>
+            <li data-filter=".filter-web">{{'CASE STUDIES ('+CaseStudies+')'}}</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch" *ngFor="let item of PortfolioData">
+          <div class="card" >
+            <img src={{item.projectImage}} class="card-img" alt="">
+            <div class="card-overlay">
+              <h2 >{{item.projectName}}</h2>
+              <p>{{item.projectContent}}</p></div>
+          </div>
+        </div>
+        
+
+          
+        </div>
+        
+      
+      
+    </div>
+    
+
+      
+</section>

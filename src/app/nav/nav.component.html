@@ -1,0 +1,11 @@
+<nav id="navbar" class="navbar">
+  <ul>
+    <li><a class="nav-link" routerLink="/home" routerLinkActive="active">Home</a></li>
+    <li><a class="nav-link" routerLink="/about" routerLinkActive="active" [queryParams]="{ title: 'About', subtitle: 'LEARN MORE ABOUT ME' }">About</a></li>
+    <li><a class="nav-link" routerLink="/resume" routerLinkActive="active" [queryParams]="{ title: 'Resume', subtitle: 'CHECK MY RESUME' }">Resume</a></li>
+    <li><a class="nav-link" routerLink="/services" routerLinkActive="active" [queryParams]="{ title: 'Services', subtitle: 'MY SERVICES' }">Services</a></li>
+    <li><a class="nav-link" routerLink="/portfolio" routerLinkActive="active" [queryParams]="{ title: 'Portfolio', subtitle: 'MY WORKS' }">Portfolio</a></li>
+    <li><a class="nav-link" routerLink="/contact" routerLinkActive="active" [queryParams]="{ title: 'contact', subtitle: 'CONTACT ME' }">Contact</a></li>
+  </ul>
+  
+</nav>

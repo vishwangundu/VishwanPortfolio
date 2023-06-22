@@ -9,6 +9,13 @@ import { EducationComponent } from './education/education.component';
 import { WorkExpoComponent } from './work-expo/work-expo.component';
 import { SkillsComponent } from './skills/skills.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { NavComponent } from './nav/nav.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { MainHeadComponent } from './main-head/main-head.component';
+import { FormsModule } from '@angular/forms';
+
+
+
 
 @NgModule({
   declarations: [
@@ -18,11 +25,16 @@ import { ProjectsComponent } from './projects/projects.component';
     EducationComponent,
     WorkExpoComponent,
     SkillsComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    NavComponent,
+    MainHeadComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FontAwesomeModule,
+    FormsModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,1 +1,22 @@
-<p>work-expo works!</p>
+<app-nav></app-nav>
+<section id="resume" class="resume">
+  <section class="services">
+    <div class="container">
+
+      <app-main-head></app-main-head>
+      <div class="row"  >
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch" *ngFor="let item of listServiceData">
+          <div class="icon-box ">
+            <div class="icon"><i class="{{ item.serviceIcon }}"></i></div>
+            <h4><a href="">{{item.serviceTitle}}</a></h4>
+            <p>{{item.serviceContent}}</p>
+          </div>
+        </div>
+        </div>
+      
+
+    </div>
+
+      
+</section>
+

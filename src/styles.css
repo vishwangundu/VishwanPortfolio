@@ -1,4 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~bootstrap-icons/font/bootstrap-icons.css';
+:root {
+    --background-image-url: '';
+}
+
+
 *{
     margin:0%;
     box-sizing: border-box;
@@ -6,4 +12,38 @@
 
 body{
     font-family:'Poppins',sans-serif;
+    background-color: #040404;
+    color: #fff;
+    position: relative;
+    background: transparent;
+   
 }
+body::before {
+    content: "";
+    position: fixed;
+    background: #040404 url("assets/per6.jpg") top right no-repeat;
+    
+    background-size: cover;
+    background-position: center;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 100vh;
+   
+    z-index: -1;
+  }
+
+  .container{
+    margin-top:2rem;
+}
+
+.icon-b {
+    text-align: center;
+    background: rgba(204, 204, 204, 0.1);
+    padding: 80px 20px;
+    transition: all ease-in-out 0.3s;
+  }
+  
+  .icon-b {
+    background-color: #0f172a;
+  }
